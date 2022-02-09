@@ -1,0 +1,416 @@
+//11. Layouts
+
+//Positions
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-fixed {
+  position: fixed;
+}
+
+.position-sticky {
+  position: sticky;
+}
+
+.top-0 {top: 0;}
+.top-2 {top: .2rem;}
+.top-4 {top: .4rem;}
+.top-8 {top: .8rem;}
+.top-12 {top: 1.2rem;}
+.top-16 {top: 1.6rem;}
+.top-24 {top: 2.4rem;}
+
+.bottom-0 {bottom: 0;}
+
+.left-0 {left: 0;}
+
+.right-0 {right: 0;}
+
+//Overflows
+.overflow-hidden { overflow: hidden;}
+
+//Displays
+.display-block { display: block;}
+.display-inline { display: inline;}
+.display-inline-block {display: inline-block;}
+.display-none { display: none;}
+
+//Table - will be explored more later
+.display-table { display: table;}
+
+
+//Grid Templates Columns
+.display-grid-columns-25percent-75percent {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.grid-columns-25-percent-75-percent {
+  grid-template-columns: 25% 75%;
+}
+
+.display-grid-columns-50percent-50percent {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.grid-columns-50-percent-50-percent {
+  grid-template-columns: 50% 50%;
+}
+
+.display-grid-columns-1fr-2fr {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.grid-columns-1fr-2fr {
+  grid-template-columns: 1fr 2fr;
+}
+.display-grid-columns-1fr-1fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-columns-1fr-1fr {
+  grid-template-columns: 1fr 1fr;
+}
+
+.display-grid-columns-200-2fr-1fr {
+  display: grid;
+  grid-template-columns: 200px 2fr 1fr;
+}
+
+.grid-columns-200-2fr-1fr {
+  grid-template-columns: 200px 2fr 1fr;
+}
+
+.display-grid-columns-200-1fr { //a fixed sidebar, with content on the right taking remaining space
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+}
+.grid-columns-1fr-auto { //first column as much space, second column auto according to its content
+  grid-template-columns: 1fr auto;
+}
+
+.display-grid-1fr-auto { //a fixed sidebar, with content on the right taking remaining space
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.grid-columns-200-1fr {
+  grid-template-columns: 20rem 1fr;
+}
+
+.grid-columns-250-1fr-1fr-1fr-1fr-1fr {
+  grid-template-columns: 250px 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-columns-250-repeat-5-fr {
+  grid-template-columns: 250px repeat(5, 1fr);
+}
+
+.grid-columns-repeat-4-200 {
+  grid-template-columns: repeat(4, 200px);
+}
+
+
+
+//Grid Template Rows
+.display-grid-rows-25percent-75percent {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.grid-rows-25-percent-75-percent {
+  grid-template-columns: 25% 75%;
+}
+.display-grid-rows-50percent-50percent {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.grid-rows-50-percent-50-percent {
+  grid-template-columns: 50% 50%;
+}
+
+.display-grid-rows-auto-1fr-auto { //use case: if you want the content in the middle to expand...and the footer to be at the very bottom, you may also need to set min-height of 100vh
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+.grid-rows-auto-1fr-auto {
+  grid-template-rows: auto 1fr auto;
+}
+
+.display-grid-rows-1fr-2fr {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.grid-rows-1fr-2fr {
+  grid-template-rows: 1fr 2fr;
+}
+.display-grid-rows-1fr-1fr {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.grid-rows-1fr-1fr {
+  grid-template-rows: 1fr 1fr;
+}
+
+.display-grid-rows-1fr-1fr-1fr { //one column three rows
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-rows-1fr-1fr-1fr {
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.display-grid-rows-200-2fr-1fr {
+  display: grid;
+  grid-template-rows: 200px 2fr 1fr;
+}
+
+.grid-rows-200-2fr-1fr {
+  grid-template-rows: 200px 2fr 1fr;
+}
+
+.display-grid-rows-64-1fr-100 {
+  display: grid;
+  grid-template-rows: 64px 1fr 100px;
+}
+
+.display-grid-rows-64-1fr-100-full-page {
+  display: grid;
+  grid-template-rows: 64px 1fr 100px;
+  min-height: 100%; //use this if you want the grid to fill the whole page
+}
+
+.grid-rows-64-1fr-100 {
+  grid-template-rows: 64px 1fr 100px;
+}
+//
+
+
+.grid-flow-row { grid-auto-flow: row; } //default - grid has multiple rows
+.grid-flow-column { grid-auto-flow: column; } //grid has multiple columns
+
+//consider auto too, auto sizes columns based on content (content width)
+.grid-4-columns-auto {
+  grid-template-columns: repeat(4, auto);
+}
+
+.display-grid-4-columns-auto {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-2-columns {
+  grid-template-columns: repeat(2, 1fr); //same as writing - 1fr 1fr
+}
+
+.grid-3-columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-columns {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-5-columns {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-6-columns {
+  grid-template-columns: repeat(6, 1fr);
+}
+.grid-7-columns {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.display-grid-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.display-grid-2-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); //same as writing - 1fr 1fr
+}
+
+.display-grid-3-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.display-grid-4-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.display-grid-5-columns {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.display-grid-6-columns {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.display-grid-7-columns {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+
+.grid-2-rows {
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid-3-rows {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-4-rows {
+  grid-template-rows: repeat(4, 1fr);
+}
+.grid-5-rows {
+  grid-template-rows: repeat(5, 1fr);
+}
+.grid-6-rows {
+  grid-template-rows: repeat(6, 1fr);
+}
+.grid-7-rows {
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.display-grid-2-rows {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+.display-grid-3-rows {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.display-grid-4-rows {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+.display-grid-5-rows {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+}
+.display-grid-6-rows {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+}
+.display-grid-7-rows {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+}
+
+
+
+
+
+
+
+.grid-self-center { align-self: center}
+
+
+
+
+//Grid Place Content
+/*
+The property place-content is a shorthand property in Grid that allows you to control
+the spacing of grid items along both the block and inline axes at once. It can specified with
+one or two values. (Align content + justify content)
+*/
+.place-content-center { place-content: center } // the value is assigned to both align content and justify content
+.place-content-start { place-content: start}
+.place-content-end { place-content: end}
+.place-content-between { place-content: space-between}
+.place-content-around { place-content: space-around}
+.place-content-evenly { place-content: space-evenly}
+.place-content-stretch { place-content: stretch}
+
+.grid-place-center-between { place-content: center space-between} //shortcut, first value is align content, second is justify content
+
+
+/*
+GRID PLACE ITEMS
+The property place-items is a shorthand property in Grid that allows you to align items
+along both the block and inline directions at once.
+. It can specified with one or two values. (Align Items + Justify items)
+*/
+.place-items-center { place-items: center}
+
+
+
+
+
+
+
+/*
+GRID COLUMN START  It specifies the item's start position.
+*/
+.column-start-1 { grid-column-start: 1}
+.column-start-2 { grid-column-start: 2}
+.column-start-3 { grid-column-start: 3}
+.column-start-4 { grid-column-start: 4}
+.column-start-5 { grid-column-start: 5}
+.column-start-minus { grid-column-start: -1}
+
+/*
+GRID COLUMN END  It specifies the item's end position.
+*/
+.column-end-1 { grid-column-end: 1}
+.column-end-2 { grid-column-end: 2}
+.column-end-3 { grid-column-end: 3}
+.column-end-4 { grid-column-end: 4}
+.column-end-5 { grid-column-end: 5}
+.column-end-minus { grid-column-end: -1}
+
+
+//Flex Flow
+.flex-row-wrap { flex-flow: row wrap; }
+.flex-column-wrap { flex-flow: column wrap; }
+
+
+//FLEX Centering Vertically and Horizontally (whatever is inside a container)
+.display-flex-center-both {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+//End Shortcut
+.display-flex-end-both {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+
+//Width
+.width-max-content { width: max-content}
+.width-min-content { width: min-content}
+.width-fit-content { width: fit-content}
+
+
+
+//Min Height min-height-vh: min-heigheight-viewport height
+.min-height-100vh { min-height: 100vh; }
+.min-height-90vh { min-height: 90vh; }
+.min-height-80vh { min-height: 80vh; }
+.min-height-70vh { min-height: 70vh; }
+.min-height-60vh { min-height: 60vh; }
+.min-height-50vh { min-height: 50vh; }
+.min-height-40vh { min-height: 40vh; }
+.min-height-35vh { min-height: 35vh; }
+.min-height-30vh { min-height: 30vh; }
+

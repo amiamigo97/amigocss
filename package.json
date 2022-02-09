@@ -1,0 +1,20 @@
+{
+  "name": "amigocss",
+  "version": "1.1.0",
+  "description": "Amigo CSS - A simple, custom-first and intuitive CSS framework for CSS lovers.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amiamigo97/amigocss.git"
+  },
+  "keywords": [
+    "css",
+    "cssframework",
+    "amigocss"
+  ],
+  "author": "Ami Amigo",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/amiamigo97/amigocss/issues"
+  },
+  "homepage": "https://amigocss.com"
+}

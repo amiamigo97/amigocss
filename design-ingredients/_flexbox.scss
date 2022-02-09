@@ -1,0 +1,189 @@
+//FLEX
+.display-flex { display: flex}
+.display-inline-flex { display: inline-flex}
+
+
+//Flex Direction
+.flex-row { flex-direction: row}
+.flex-row-reverse { flex-direction: row-reverse}
+.flex-column { flex-direction: column}
+.flex-column-reverse { flex-direction: column-reverse}
+
+
+//Flex Align Items (For single row flex items)
+.flex-align-stretch { align-items: stretch; }
+.flex-align-start { align-items: flex-start; }
+.flex-align-end { align-items: flex-end; }
+.flex-align-baseline { align-items: baseline; }
+.flex-align-center { align-items: center;}
+
+
+//Flex Justify Content - (Flex Container)
+.flex-justify-between {justify-content: space-between;}
+.flex-justify-around { justify-content: space-around; }
+.flex-justify-evenly { justify-content: space-evenly; }
+.flex-justify-start { justify-content: flex-start; }
+.flex-justify-end { justify-content: flex-end; }
+.flex-justify-center { justify-content: center; } //Just to clarify that this centering happens horizontally (By Default)
+
+
+//Flex Wrap
+.flex-wrap { flex-wrap: wrap;}
+.flex-wrap-reverse { flex-wrap: wrap-reverse;}
+.flex-no-wrap { flex-wrap: nowrap;}
+
+//Align Content on  on multi-line flexible containers (Flex items in multiple lines) - Rarely used property in Flexbox
+.flex-content-center { align-content: center; }
+.flex-content-start { align-content: flex-start; }
+.flex-content-end { align-content: flex-end; }
+.flex-content-between { align-content: space-between; }
+.flex-content-around { align-content: space-around; }
+.flex-content-evenly { align-content: space-evenly; }
+.flex-content-stretch { align-content: stretch}
+
+
+//Align Self (flex Item)
+.flex-self-auto { align-self: auto; }
+.flex-self-end { align-self: flex-end; }
+.flex-self-start { align-self: flex-start; }
+.flex-self-stretch { align-self: stretch; }
+.flex-self-center { align-self: center; }
+.flex-self-baseline { align-self: baseline; }
+
+//FLEX ORDER
+.flex-order-0 { order: 0} //default
+.flex-order-1 { order: 1}
+.flex-order-2 { order: 2}
+.flex-order-3 { order: 3}
+.flex-order-minus-1 { order: -1}
+
+
+// Flex Width ( Basis | Shrink | Grow):
+// A flex-item is forced to grow to fill up the remaining width
+
+.flex-grow-0 { flex-grow: 0 } //default
+.flex-grow-1 { flex-grow: 1 }
+.flex-grow-2 {flex-grow: 2 } /*will occupy double the space*/
+.flex-grow-3 {flex-grow: 3 } /*will occupy three times the space*/
+
+
+// A flex-item is forced not to shrink
+.flex-shrink-1 { flex-shrink: 1 } //default
+.flex-shrink-0 { flex-shrink: 0 }
+
+//Flex Grow and Shrink shortcuts
+.flex-grow-0-shrink-1 {
+  flex-grow: 0;
+  flex-shrink: 1;
+}
+
+.flex-grow-1-shrink-0 {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+//values  10%, 20%, 25%, 30%, 33.33%, 40%, 50%, 60%, 66.67%, 70%, 75%, 80%, 90%, 100%
+//FLEX WIDTH
+//A column (flex item) with 50% width
+//Flex-basis property for a flex item is similar to width when flex-direction is row
+//and similar to height when flex-direction is column .
+// Main size system
+.flex-basis-0 {
+  flex-basis: 0;
+}
+
+.flex-basis-20 {
+  flex-basis: 2rem;
+}
+
+.flex-basis-40 {
+  flex-basis: 4rem;
+}
+
+.flex-basis-80 {
+  flex-basis: 8rem;
+}
+
+.flex-basis-120 {
+  flex-basis: 12rem;
+}
+
+.flex-basis-160 {
+  flex-basis: 16rem;
+}
+
+.flex-basis-240 {
+  flex-basis: 24rem;
+}
+
+.flex-basis-320 {
+  flex-basis: 32rem;
+}
+
+.flex-basis-480 {
+  flex-basis: 48rem;
+}
+
+.flex-basis-640 {
+  flex-basis: 64rem;
+}
+
+.flex-basis-800 {
+  flex-basis: 80rem;
+}
+
+.flex-basis-960 {
+  flex-basis: 96rem;
+}
+
+.flex-basis-1280 {
+  flex-basis: 128rem;
+}
+
+// Extra values
+.flex-basis-100 {
+  flex-basis: 10rem;
+}
+
+.flex-basis-200 {
+  flex-basis: 20rem;
+}
+
+.flex-basis-400 {
+  flex-basis: 40rem;
+}
+
+.flex-basis-560 {
+  flex-basis: 56rem;
+}
+
+.flex-basis-720 {
+  flex-basis: 72rem;
+}
+
+.flex-basis-1040 {
+  flex-basis: 104rem;
+}
+
+.flex-basis-1120 {
+  flex-basis: 112rem;
+}
+
+.flex-basis-1200 {
+  flex-basis: 120rem;
+}
+
+.flex-basis-10-percent{ flex-basis: 10% }
+.flex-basis-20-percent{ flex-basis: 20% }
+.flex-basis-25-percent{ flex-basis: 25% }
+.flex-basis-30-percent{ flex-basis: 30% }
+.flex-basis-33-percent{ flex-basis: 33.33% }
+.flex-basis-40-percent{ flex-basis: 40% }
+.flex-basis-50-percent{ flex-basis: 50% }
+.flex-basis-60-percent{ flex-basis: 60% }
+.flex-basis-66-percent{ flex-basis: 66.67% }
+.flex-basis-70-percent{ flex-basis: 70% }
+.flex-basis-75-percent{ flex-basis: 75% }
+.flex-basis-80-percent{ flex-basis: 80% }
+.flex-basis-90-percent{ flex-basis: 90% }
+.flex-basis-100-percent{ flex-basis: 100% }

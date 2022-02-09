@@ -1,0 +1,157 @@
+//BACKGROUND COLORS from Open Colors
+
+/*1. GRAY*/
+.background-gray-00 { background-color: #f8f9fa; } //Lightest
+.background-gray-02 { background-color: #e9ecef; } //Lighter
+.background-gray-04 { background-color: #ced4da; } //Light
+
+.background-gray-05 { background-color: #adb5bd; } //Dark
+.background-gray-07 { background-color: #495057; } //Darker
+.background-gray-09 { background-color: #212529; } //Darkest
+
+
+//2. RED
+.background-red-00 { background-color: #fff5f5; } //Lightest
+.background-red-02 { background-color: #ffc9c9; } //Lighter
+.background-red-04 { background-color: #ff8787; } //Light
+
+.background-red-05 { background-color: #ff6b6b; } //Dark
+.background-red-07 { background-color: #f03e3e; } //Darker
+.background-red-09 { background-color: #c92a2a; } //Darkest
+
+//3. PINK
+.background-pink-00 { background-color: #fff0f6; } //Lightest
+.background-pink-02 { background-color: #fcc2d7; } //Lighter
+.background-pink-04 { background-color: #f783ac; } //Light
+
+
+.background-pink-05 { background-color: #f06595; } //Primary
+.background-pink-07 { background-color: #d6336c; } //Dark
+.background-pink-09 { background-color: #a61e4d; } //Darker
+
+
+// 4. GRAPE / ( MAGENTA / FUCHSIA ) Grape-Zabibu,
+.background-grape-00 { background-color: #f8f0fc; } //Lightest
+.background-grape-02 { background-color: #eebefa; } //Lighter
+.background-grape-04 { background-color: #da77f2; } //Light
+
+.background-grape-05 { background-color: #cc5de8; } //Dark
+.background-grape-07 { background-color: #ae3ec9; } //Darker
+.background-grape-09 { background-color: #862e9c; } //Darkest
+
+.background-magenta-00 { background-color: #f8f0fc; } //Lightest
+.background-magenta-02 { background-color: #eebefa; } //Lighter
+.background-magenta-04 { background-color: #da77f2; } //Light
+
+.background-magenta-05 { background-color: #cc5de8; } //Dark
+.background-magenta-07 { background-color: #ae3ec9; } //Darker
+.background-magenta-09 { background-color: #862e9c; } //Darkest
+
+.background-fuchsia-00 { background-color: #f8f0fc; } //Lighter
+.background-fuchsia-02 { background-color: #eebefa; } //Light
+.background-fuchsia-04 { background-color: #da77f2; } //Light
+
+.background-fuchsia-05 { background-color: #cc5de8; } //Dark
+.background-fuchsia-07 { background-color: #ae3ec9; } //Darker
+.background-fuchsia-09 { background-color: #862e9c; } //Darkest
+
+//5. VIOLET /( PURPLE )(violet-Urujuani) (Purple-Zambarau)
+.background-violet-00 { background-color: #f3f0ff; } //Lightest
+.background-violet-02 { background-color: #d0bfff; } //Lighter
+.background-violet-04 { background-color: #9775fa; } //Light
+
+.background-violet-05 { background-color: #845ef7; } //Dark
+.background-violet-07 { background-color: #7048e8; } //Darker
+.background-violet-09 { background-color: #5f3dc4; } //Darkest
+
+//Open Colors doesn't have purple...but violet is pretty close to purple. So purple is violet in this instance.
+.background-purple-00 { background-color: #f3f0ff; } //Lighter
+.background-purple-02 { background-color: #d0bfff; } //Light
+.background-purple-04 { background-color: #9775fa; } //Light
+
+.background-purple-05 { background-color: #845ef7; } //Dark
+.background-purple-07 { background-color: #7048e8; } //Darker
+.background-purple-09 { background-color: #5f3dc4; } //Darkest
+
+
+//6. INDIGO (Indigo - Nili, Bluu Iliyoiva)
+.background-indigo-00 { background-color: #edf2ff; } //Lightest
+.background-indigo-02 { background-color: #bac8ff; } //Lighter
+.background-indigo-04 { background-color: #748ffc; } //Light
+
+.background-indigo-05 { background-color: #5c7cfa; } //Dark
+.background-indigo-07 { background-color: #4263eb; } //Darker
+.background-indigo-09 { background-color: #364fc7; } //Darkest
+
+//7. BLUE
+.background-blue-00 { background-color: #e7f5ff; } //Lightest
+.background-blue-02 { background-color: #a5d8ff; } //Lighter
+.background-blue-04 { background-color: #4dabf7; } //Light
+
+.background-blue-05 { background-color: #339af0; } //Dark
+.background-blue-07 { background-color: #1c7ed6; } //Darker
+.background-blue-09 { background-color: #1864ab; } //Darkest
+
+//8. CYAN
+.background-cyan-00 { background-color: #e3fafc; } //Lightest
+.background-cyan-02 { background-color: #99e9f2; } //Lighter
+.background-cyan-04 { background-color: #3bc9db; } //Light
+
+.background-cyan-05 { background-color: #22b8cf; } //Dark
+.background-cyan-07 { background-color: #1098ad; } //Darker
+.background-cyan-09 { background-color: #0b7285; } //Darkest
+
+//9. TEAL
+.background-teal-00 { background-color: #e6fcf5; } //Lightest
+.background-teal-02 { background-color: #96f2d7; } //Lighter
+.background-teal-04 { background-color: #38d9a9; } //Light
+
+.background-teal-05 { background-color: #20c997; } //Dark
+.background-teal-07 { background-color: #0ca678; } //Darker
+.background-teal-09 { background-color: #087f5b; } //Darkest
+
+//10. GREEN
+.background-green-00 { background-color: #ebfbee; } //Lighter
+.background-green-02 { background-color: #b2f2bb; } //Light
+.background-green-04 { background-color: #69db7c; } //Light
+
+
+.background-green-05 { background-color: #51cf66; } //Dark
+.background-green-07 { background-color: #37b24d; } //Darker
+.background-green-09 { background-color: #2b8a3e; } //Darkest
+
+
+//11. LIME
+.background-lime-00 { background-color: #f4fce3; } //Lighter
+.background-lime-02 { background-color: #d8f5a2; } //Light
+.background-lime-04 { background-color: #a9e34b; } //Light
+
+.background-lime-05 { background-color: #94d82d; } //Dark
+.background-lime-07 { background-color: #74b816; } //Darker
+.background-lime-09 { background-color: #5c940d; } //Darkest
+
+
+//12. YELLOW
+.background-yellow-00 { background-color: #fff9db; } //Lightest
+.background-yellow-02 { background-color: #ffec99; } //Lighter
+.background-yellow-04 { background-color: #ffd43b; } //Light
+
+.background-yellow-05 { background-color: #fcc419; } //Dark
+.background-yellow-07 { background-color: #f59f00; } //Darker
+.background-yellow-09 { background-color: #e67700; } //Darkest
+
+//13. ORANGE
+.background-orange-00 { background-color: #fff4e6; } //Lightest
+.background-orange-02 { background-color: #ffd8a8; } //Lighter
+.background-orange-04 { background-color: #ffa94d; } //Light
+
+.background-orange-05 { background-color: #ff922b; } //Dark
+.background-orange-07 { background-color: #f76707; } //Darker
+.background-orange-09 { background-color: #d9480f; } //Darkest
+
+// 14. (I will add the fourteenth backgroundcolor
+
+//Extra colors
+.background-white {background-color: #fff}
+.background-black {background-color: #000}
+.background-gray {background-color: #333}

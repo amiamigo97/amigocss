@@ -1,0 +1,102 @@
+
+
+//Grid Layout (Needs grid container (parent) + Grid item (child)
+/*
+.grid {
+  display: grid;
+  gap: 9.6rem; //applies both to row and column
+}*/
+
+.display-grid {
+  display: grid;
+}
+
+.display-inline-grid {
+  display: inline-grid;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+//Grid Center
+.grid-center-vertical { align-items: center}
+//Grid Align-Items: Controls Vertical Position within the row
+//control the placement of individual elements within each cell.
+/*
+The property align-items allows us to vertically align the content within the rows, while
+the previous property align-content allows us to vertically space out the entire rows.
+*/
+/*
+ To center align vertically within each row
+*/
+.grid-align-center { align-items: stretch}
+.grid-align-start { align-items: start}
+.grid-align-end { align-items: end}
+.grid-align-center { align-items: center}
+
+
+////Grid Alignment: Justify-Items (Justify Items applies to the child elements(within its cell), without affecting the shape of the grid
+//Grid Justify Items = horizontally align the content within the columns as opposed to justify-content which allows us to horizontally space
+//out the entire columns
+/*
+To center align horizontally within each column
+*/
+// Applied to the grid container
+.justify-items-stretch
+{ justify-items: stretch; } //default
+.justify-items-start
+{ justify-items: start; }
+.justify-items-end
+{ justify-items: end; }
+.justify-items-center
+{ justify-items: center; }
+
+
+
+
+
+
+
+
+
+//Grid Align Rows = used to align the rows in the grid, container height has to be specified for it to work, otherwise they're just packed together
+// alignment of the grid (grid items) within the grid container , aligns the grid along the block (column) axis
+//In Grid, the property align-content is used to control spacing of the grid items along the block axis - which is the vertical direction
+// As a shortcut, what justify content does to horizontal direction, align content does to vertical direction
+// This property only works when:
+/*
+1.The grid container has a height value that is greater than the sum of individual
+row heights
+2. And when none of the grid items has a height specified in fr units
+*/
+// Applied to the grid container
+.grid-content-start
+{ align-content: start; }
+.grid-content-end
+{ align-content: end; }
+.grid-content-center
+{ align-content: center; }
+.grid-content-stretch
+{ align-content: stretch; }
+.grid-content-around
+{ align-content: space-around; }
+.grid-content-between
+{ align-content: space-between; }
+.grid-content-evenly
+{ align-content: space-evenly; }
+
+
+//Grid Alignment: Justify-Content (Justify Content applies to the grid structure, changing columns (In Row Axis - Horizontal Direction)
+.grid-justify-center { justify-content: center;}
+.grid-justify-start { justify-content: start;}
+.grid-justify-end { justify-content: end;}
+
+//Grid alignment distribution - when we have multiple columns (In Row Axis - Horizontal Direction)
+.grid-justify-between { justify-content: space-between}
+.grid-justify-around { justify-content: space-around}
+.grid-justify-evenly { justify-content: space-evenly}
+.grid-justify-stretch { justify-content: stretch} //default
+
